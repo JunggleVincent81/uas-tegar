@@ -1,59 +1,92 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Sistem Pemesanan Makanan Berbasis Web  
+(Ujian Akhir Semester – UAS)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
 
-## About Laravel
+## 👤 Identitas Mahasiswa
+- Nama : Tegar Bagus Santoso  
+- Nim : 202469040084 
+- Kelas : 3/A Informatika   
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+📌 Deskripsi Aplikasi
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Aplikasi "Sistem Pemesanan Makanan Berbasis Web" ini dibuat untuk memenuhi tugas Ujian Akhir Semester (UAS).  
+Sistem ini dirancang untuk mensimulasikan alur pemesanan makanan di sebuah restoran, mulai dari customer melakukan pemesanan, kasir melakukan konfirmasi pembayaran, hingga chef memproses pesanan di dapur.
 
-## Learning Laravel
+Aplikasi menerapkan konsep "role-based access control", di mana setiap pengguna memiliki hak akses dan tampilan sistem yang berbeda sesuai perannya.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+🔄 Alur & Logika Sistem
 
-## Laravel Sponsors
+### 1️⃣ Customer
+- Melihat daftar menu
+- Melakukan pemesanan
+- Melakukan checkout
+- Sistem akan menentukan nomor meja secara otomatis
+- Customer dapat melihat status pesanan secara real-time
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 2️⃣ Kasir
+- Melihat daftar pesanan yang menunggu pembayaran
+- Memilih metode pembayaran (Cash / QRIS / Debit)
+- Mengonfirmasi pembayaran melalui
+- Setelah pembayaran berhasil, status pesanan berubah menjadi 'Paid'
 
-### Premium Partners
+### 3️⃣ Chef (Dapur)
+- Melihat antrian pesanan yang sudah dibayar
+- Menekan tombol **Mulai Masak** → status berubah menjadi `Cooking`
+- Menekan tombol **Selesai** → status berubah menjadi `Done`
+- Setelah pesanan selesai, 'meja otomatis dibuka kembali (available)'
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 4️⃣ Admin
+- Mengelola user dan role (Admin, Kasir, Chef, Customer)
+- Melihat dashboard statistik:
+  - Total user
+  - Total order
+  - Order hari ini
+  - Meja tersedia
+- Melihat grafik status order dan order 7 hari terakhir
+- Monitoring order yang bermasalah (pending terlalu lama)
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🧩 Teknologi yang Digunakan
+- **Laravel** (Backend Framework)
+- **MySQL** (Database)
+- **Tailwind CSS** (UI Styling)
+- **Alpine.js** (Interaksi Frontend)
+- **Chart.js** (Visualisasi Data)
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🔐 Akun Demo (Untuk Dosen)
 
-## Security Vulnerabilities
+Gunakan akun berikut untuk mengakses seluruh fitur sistem:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 👨‍💼 Admin
+- Email: `admin@admin.com`  
+- Password: `admin123`
 
-## License
+### 💰 Kasir
+- Email: `kasir@kasir.com`  
+- Password: `kasir123`
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 👨‍🍳 Chef
+- Email: `chef@chef.com`  
+- Password: `chef123`
+
+### 👤 Customer
+- Email: `customer@user.com`  
+- Password: `user123`
+
+> **Catatan:**  
+> Informasi akun demo juga ditampilkan otomatis dalam bentuk **modal alert** pada halaman login untuk memudahkan pengujian.
+
+---
+
+## ✅ Penutup
+Web ini dibuat untuk kebutuhan uas, tentu belum terlalu kompleks dan masih banyak yg perlu diperbaiki dan ditambahkan dalam web tersebut.
+Untuk saat ini, ini yg dapat saya berikan untuk uas kali ini terimakasih.
+
