@@ -1,44 +1,45 @@
 # Sistem Pemesanan Makanan Berbasis Web  
-(Ujian Akhir Semester – UAS)
+**(Ujian Akhir Semester – UAS)**
 
 ---
 
 ## 👤 Identitas Mahasiswa
-- Nama : Tegar Bagus Santoso  
-- Nim : 202469040084 
-- Kelas : 3/A Informatika   
+- **Nama** : Tegar Bagus Santoso  
+- **Program Studi** : (isi sesuai prodi kamu)  
+- **Mata Kuliah** : (isi sesuai mata kuliah)  
+- **Dosen Pengampu** : (opsional)  
 
 ---
 
-📌 Deskripsi Aplikasi
+## 📌 Deskripsi Aplikasi
 
-Aplikasi "Sistem Pemesanan Makanan Berbasis Web" ini dibuat untuk memenuhi tugas Ujian Akhir Semester (UAS).  
-Sistem ini dirancang untuk mensimulasikan alur pemesanan makanan di sebuah restoran, mulai dari customer melakukan pemesanan, kasir melakukan konfirmasi pembayaran, hingga chef memproses pesanan di dapur.
+Aplikasi **Sistem Pemesanan Makanan Berbasis Web** ini dibuat untuk memenuhi tugas **Ujian Akhir Semester (UAS)**.  
+Sistem ini dirancang untuk mensimulasikan alur pemesanan makanan di sebuah restoran, mulai dari **customer melakukan pemesanan**, **kasir melakukan konfirmasi pembayaran**, hingga **chef memproses pesanan di dapur**.
 
-Aplikasi menerapkan konsep "role-based access control", di mana setiap pengguna memiliki hak akses dan tampilan sistem yang berbeda sesuai perannya.
+Aplikasi menerapkan konsep **role-based access control**, di mana setiap pengguna memiliki hak akses dan tampilan sistem yang berbeda sesuai perannya.
 
 ---
 
-🔄 Alur & Logika Sistem
+## 🔄 Alur & Logika Sistem
 
 ### 1️⃣ Customer
 - Melihat daftar menu
 - Melakukan pemesanan
 - Melakukan checkout
-- Sistem akan menentukan nomor meja secara otomatis
-- Customer dapat melihat status pesanan secara real-time
+- Sistem akan **menentukan nomor meja secara otomatis**
+- Customer dapat melihat **status pesanan secara real-time**
 
 ### 2️⃣ Kasir
 - Melihat daftar pesanan yang menunggu pembayaran
 - Memilih metode pembayaran (Cash / QRIS / Debit)
-- Mengonfirmasi pembayaran melalui
-- Setelah pembayaran berhasil, status pesanan berubah menjadi 'Paid'
+- Mengonfirmasi pembayaran melalui **modal konfirmasi**
+- Setelah pembayaran berhasil, status pesanan berubah menjadi **Paid**
 
 ### 3️⃣ Chef (Dapur)
 - Melihat antrian pesanan yang sudah dibayar
 - Menekan tombol **Mulai Masak** → status berubah menjadi `Cooking`
 - Menekan tombol **Selesai** → status berubah menjadi `Done`
-- Setelah pesanan selesai, 'meja otomatis dibuka kembali (available)'
+- Setelah pesanan selesai, **meja otomatis dibuka kembali (available)**
 
 ### 4️⃣ Admin
 - Mengelola user dan role (Admin, Kasir, Chef, Customer)
