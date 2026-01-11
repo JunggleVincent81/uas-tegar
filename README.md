@@ -5,12 +5,12 @@
 
 ## 👤 Identitas Mahasiswa
 - **Nama** : Tegar Bagus Santoso  
-- **Program Studi** : (isi sesuai prodi kamu)  
-- **Mata Kuliah** : (isi sesuai mata kuliah)  
+- **Kelaws** : 3A/Informatika 
+- **Nim** : 202469040084 
 - **Dosen Pengampu** : (opsional)  
 
 ---
-- Domai: https://uas.tegarbs.site
+- Domain: https://uas.tegarbs.site
 - domain Pengganti: https://dependable-fuchsia-fox.103-247-9-134.cpanel.site/login
 - mohon maaf pak dikarenakan saya salah click change nameserver, jadinya untuk saat ini domain saya tidak bisa diakses kemungkinan besok senin baru dapat diakses jadi saya taruh project saya di temporery domain yg sudah saya taruh diatas sebagai domain pengganti
 
