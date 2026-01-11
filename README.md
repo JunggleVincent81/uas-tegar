@@ -10,7 +10,7 @@
 - **Dosen Pengampu** : (opsional)  
 
 ---
-- Domai: uas.tegarbs.site
+- Domai: https://uas.tegarbs.site
 - domain Pengganti: https://dependable-fuchsia-fox.103-247-9-134.cpanel.site/login
 - mohon maaf pak dikarenakan saya salah click change nameserver, jadinya untuk saat ini domain saya tidak bisa diakses kemungkinan besok senin baru dapat diakses jadi saya taruh project saya di temporery domain yg sudah saya taruh diatas sebagai domain pengganti
 
