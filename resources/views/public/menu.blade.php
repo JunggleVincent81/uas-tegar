@@ -22,13 +22,23 @@
 
         <div class="flex items-center gap-4" x-data="{ open: false }">
 
-            <button
-                @click="open = !open"
-                class="px-4 py-2 rounded-xl
-                       bg-white/20 border border-white/30
-                       hover:bg-white/30 transition">
-                Halo, <b>{{ auth()->user()->name }}</b>
-            </button>
+            @auth
+<button
+    @click="open = !open"
+    class="px-4 py-2 rounded-xl
+           bg-white/20 border border-white/30
+           hover:bg-white/30 transition">
+    Halo, <b>{{ auth()->user()->name }}</b>
+</button>
+@else
+<a href="{{ route('login') }}"
+   class="px-4 py-2 rounded-xl
+          bg-white/20 border border-white/30
+          hover:bg-white/30 transition">
+   Login
+</a>
+@endauth
+
 
             <div
                 x-show="open"
